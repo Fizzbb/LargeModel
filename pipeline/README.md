@@ -21,7 +21,8 @@ The pipeline is then initialized with 8 transformer layers on one GPU and 8 tran
 [bing bert](https://github.com/microsoft/DeepSpeedExamples/tree/master/training/bing_bert), based on NV's [DeepLearningExample](https://github.com/NVIDIA/DeepLearningExamples/tree/master/PyTorch/LanguageModeling/BERT#dataset-guidelines)
 
 If not running in NGC container, need to place BERT/ to /workspace/bert, and set ENV BERT_PREP_WORKING_DIR
-Requires mpirun (```apt-get install mpich```)
+
+Require mpirun (```apt-get install mpich```)
 
 [DeepSpeed Example](https://github.com/microsoft/DeepSpeedExamples/tree/master)
 
