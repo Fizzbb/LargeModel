@@ -7,7 +7,9 @@
 
 To demonstrate training large Transformer models using pipeline parallelism, we scale up the Transformer layers appropriately. We use an embedding dimension of 4096, hidden size of 4096, 16 attention heads and 12 total transformer layers (nn.TransformerEncoderLayer). This creates a model with ~1.4 billion parameters.
 
-We need to initialize the RPC Framework since Pipe depends on the RPC framework via RRef which allows for future expansion to cross host pipelining. We need to initialize the RPC framework with only a single worker since we’re using a single process to drive multiple GPUs.
+We need to initialize the **RPC Framework** since Pipe depends on the RPC framework via RRef which allows for future expansion to cross host pipelining. We need to initialize the RPC framework with only a single worker since we’re using a single process to drive multiple GPUs.
+
+RPC framework backend called CUDA_IPC API, will cause trouble on other accelerators if not modified.
 
 The pipeline is then initialized with 8 transformer layers on one GPU and 8 transformer layers on the other GPU (? why not 6, 6, a total of 12).
 
