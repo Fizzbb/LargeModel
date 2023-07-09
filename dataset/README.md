@@ -22,7 +22,7 @@ from datasets import load_dataset
 dset = load_dataset('imagenet-1k', split='train', streaming=True, use_auth_token=True)
 ```
 ### Preprocessing
-The training images for imagenet are already in appropriate subfolders (like n07579787, n07880968). You need to get the validation groundtruth and move the validation images into appropriate subfolders. To do this, download ILSVRC2012_img_train.tar ILSVRC2012_img_val.tar and use the following commands:
+The training images for imagenet are already in appropriate subfolders (like n07579787, n07880968). You need to get the validation groundtruth and move the validation images into appropriate subfolders. To do this, download ILSVRC2012_img_train.tar ILSVRC2012_img_val.tar and use the following commands [reference](https://git-disl.github.io/GTDLBench/datasets/imagenet/#:~:text=Download%20Imagenet%2D12%20dataset%20from,classes%20and%201.2%20million%20images.):
 ```
 # extract train data
 mkdir train && mv ILSVRC2012_img_train.tar train/ && cd train
