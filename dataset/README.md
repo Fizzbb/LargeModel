@@ -1,9 +1,9 @@
 # Dataset download and preparation 
 
-## 1. ImageNet
+## 1. ImageNet (ILSVRC2012)
 
 ### Info
-1000 Class, 1.2million image
+This dataset spans 1000 object classes and contains 1,281,167 training images, 50,000 validation images and 100,000 test images.
 
 Image resolution varies, e.g., fish folder, smallest 75 x 56, largest 4288 x 2848. On average is 469x387 pixel.
 
@@ -12,11 +12,11 @@ The offical download [sites](https://www.image-net.org/download.php) does not su
 
 Use [Academic Torrent](https://academictorrents.com/browse.php?search=ImageNet), download the torrent file first, and then use [TransmissionBT](https://transmissionbt.com/download) to download the dataset with torrent file.
 
-```ILSVRC2012_img_train.tar``` ~150GB
+- ```ILSVRC2012_img_train.tar``` 147.9GB
 
-```ILSVR2012_img_val.tar``` 
+- ```ILSVR2012_img_val.tar``` 6.74GB
 
-Or use a subset, ImageNet-1k from hugggingface, requires tokens through ```huggingface-cli login```
+Or use [ImageNet-1k](https://huggingface.co/datasets/imagenet-1k) from hugggingface, requires tokens through ```huggingface-cli login```
 ```
 from datasets import load_dataset
 dset = load_dataset('imagenet-1k', split='train', streaming=True, use_auth_token=True)
