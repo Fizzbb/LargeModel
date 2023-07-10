@@ -8,9 +8,12 @@ This dataset spans 1000 object classes and contains 1,281,167 training images, 5
 Image resolution varies, e.g., fish folder, smallest 75 x 56, largest 4288 x 2848. On average is 469x387 pixel.
 
 ### Download
-1. The offical download [sites](https://www.image-net.org/download.php) does not support downloading anymore.
+1. The offical download [sites](https://www.image-net.org/download.php) does not support downloading data anymore. Only the toolkits works.
+```
+wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_devkit_t12.tar.gz
+```
 
-2. Use [Academic Torrent](https://academictorrents.com/browse.php?search=ImageNet), download the torrent file first, and then use [TransmissionBT](https://transmissionbt.com/download) to download the dataset with torrent file.
+3. Use [Academic Torrent](https://academictorrents.com/browse.php?search=ImageNet), download the torrent file first, and then use [TransmissionBT](https://transmissionbt.com/download) to download the dataset with torrent file.
 
 ```
 apt-get install transmission-cli
