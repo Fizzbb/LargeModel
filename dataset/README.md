@@ -35,6 +35,12 @@ kaggle competitions download -c imagenet-object-localization-challenge #register
 ```
 [Reference example](https://moiseevigor.github.io/software/2022/12/18/one-pager-training-resnet-on-imagenet/)
 
+5. Alternative, use Tiny-ImageNet, Tiny ImageNet contains 100000 images of 200 classes (500 for each class) downsized to 64×64 colored images. Each class has 500 training images, 50 validation images and 50 test images.
+```
+wget http://cs231n.stanford.edu/tiny-imagenet-200.zip
+```
+[Reference example](https://rocm.docs.amd.com/en/latest/examples/machine_learning/pytorch_inception.html)
+
 ### Preprocessing
 - The training images for imagenet are already in appropriate subfolders (like n07579787, n07880968). You need to get the validation groundtruth and move the validation images into appropriate subfolders. To do this, download ILSVRC2012_img_train.tar ILSVRC2012_img_val.tar and use the following commands [reference](https://git-disl.github.io/GTDLBench/datasets/imagenet/#:~:text=Download%20Imagenet%2D12%20dataset%20from,classes%20and%201.2%20million%20images.):
 ```
