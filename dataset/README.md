@@ -12,6 +12,10 @@ Image resolution varies, e.g., fish folder, smallest 75 x 56, largest 4288 x 284
 
 2. Use [Academic Torrent](https://academictorrents.com/browse.php?search=ImageNet), download the torrent file first, and then use [TransmissionBT](https://transmissionbt.com/download) to download the dataset with torrent file.
 
+```
+apt-get install transmission-cli
+transmission-cli ILSVRC2012_img_train.tar-a306397ccf9c2ead27155983c254227c0fd938e2.torrent -w ~/Downloads
+```
 - ```ILSVRC2012_img_train.tar``` 147.9GB
 
 - ```ILSVR2012_img_val.tar``` 6.74GB
