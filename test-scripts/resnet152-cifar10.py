@@ -24,14 +24,14 @@ def main():
                         help='number of gpus per node')
     parser.add_argument('-nr', '--nr', default=0, type=int,
                         help='ranking within the nodes')
-    parser.add_argument('--epochs', default=20, type=int, metavar='N',
+    parser.add_argument('--epochs', default=5, type=int, metavar='N',
                         help='number of total epochs to run')
     args = parser.parse_args()
     args.world_size = args.gpus * args.nodes
     os.environ['MASTER_ADDR'] = 'localhost'
     os.environ['MASTER_PORT'] = '8889'
+    print("use {} gpus".format(args.gpus))
     mp.spawn(train, nprocs=args.gpus, args=(args,))
-
 
 def train(gpu, args):
     model = models.resnet.resnet152(pretrained = False)
@@ -69,22 +69,23 @@ def train(gpu, args):
     total_step = len(trainloader)
     train_start = datetime.now()
     for epoch in range(args.epochs):
+        print("start epoch {}".format(epoch))
+        start = datetime.now()
         for i, (images, labels) in enumerate(trainloader):
-            start = datetime.now()
             images = images.cuda(non_blocking=True)
             labels = labels.cuda(non_blocking=True)
             # Forward pass
             outputs = model(images)
             loss = criterion(outputs, labels)
-
             # Backward and optimize
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            if (i + 1) % 10 == 0 and gpu == 0:
+            if (i + 1) % 100 == 0 and gpu == 0:
                 print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'.format(epoch + 1, args.epochs, i + 1, total_step,
                                                                          loss.item()))
                 print("Training complete in: " + str(datetime.now() - start))
+                start = datetime.now()
     print("Training done, total epoch {}, total time {}".format(args.epochs, datetime.now()-train_start))
 
 if __name__ == '__main__':

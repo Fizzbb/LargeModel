@@ -7,7 +7,7 @@ import torchvision.transforms as transforms
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Set hyperparameters
-num_epochs = 10
+num_epochs = 2
 batch_size = 64
 learning_rate = 0.001
 
@@ -47,9 +47,10 @@ import time
 for epoch in range(num_epochs):
     step = 0
     print("start epoch {}".format(epoch))
+    t0 = time.time()
+    tt0 = t0
     for inputs, labels in train_loader:
         step = step + 1
-        t1 = time.time()
         # Move input and label tensors to the device
         inputs = inputs.to(device)
         labels = labels.to(device)
@@ -64,10 +65,12 @@ for epoch in range(num_epochs):
         # Backward pass
         loss.backward()
         optimizer.step()
-        if step%100 == 0:
-            print("step : {}, 100 step time: {}".format(step, time.time()-t1 ))
-            t1 = time.time()
+        if step%1000 == 0:
+            print("step : {}, 1000 step time: {}".format(step, time.time()-tt0 ))
+            tt0 = time.time()
     # Print the loss for every epoch
-    print(f'Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}')
+    t1 = (time.time() - t0)
+    print(f'Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}, time: {t1:.2f} seconds')
 
 print(f'Finished Training, Loss: {loss.item():.4f}')
+
