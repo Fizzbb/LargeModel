@@ -1,6 +1,8 @@
 numpy==1.23.4
-torchbench==0.0.31
+#torchbench==0.0.31
 datasets==2.13.1
 evaluate==0.4.0
 alembic==1.11.1
-pip install git+https://github.com/huggingface/transformers #install the latest
+git+https://github.com/huggingface/transformers #install the latest
+scikit-learn
+accelerate==0.21.0
