@@ -1,1 +1,3 @@
-test-scripts/.data
+test-scripts/.data/
+test-scripts/data/
+test-scripts/.hypothesis/
