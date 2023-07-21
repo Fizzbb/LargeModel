@@ -1,5 +1,6 @@
 recommenders==1.1.1
 scrapbook
+tensorflow==2.10.0
 tensorflow-estimator==2.10.0
 numpy==1.23.4
 #torchbench==0.0.31
