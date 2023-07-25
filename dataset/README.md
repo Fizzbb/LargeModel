@@ -19,7 +19,7 @@ wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_devkit_t12.tar.gz
 # download the torrent file
 wget https://academictorrents.com/download/5d6d0df7ed81efd49ca99ea4737e0ae5e3a5f2e5.torrent
 wget https://academictorrents.com/download/a306397ccf9c2ead27155983c254227c0fd938e2.torrent
-
+```
 ```
 apt-get install transmission-cli
 transmission-cli a306397ccf9c2ead27155983c254227c0fd938e2.torrent -w ~/Downloads
