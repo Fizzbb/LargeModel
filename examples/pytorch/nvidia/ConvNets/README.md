@@ -5,6 +5,8 @@ In this repository you will find implementations of various image classification
 Detailed information on each model can be found here:
 
 ## Simplified Version for ROCm compatiability 
+
+**The commands to run**
 ```
 # single card, fp32
 python3 main.py /home/aac/data/imagenet/ --data-backend pytorch --arch resnet50 --label-smoothing 0.1 
@@ -17,11 +19,18 @@ python3 ./multiproc.py --nproc_per_node 8 ./main.py /home/aac/data/imagenet/ --d
 
 ```
 
-Changes made to run on ROCm include 
+**Changes made to run on ROCm include** 
 1) remove the DALI pipeline implementation in dataloader.py, because DALI installation requires CUDA
 2) remove the gpu affinity check/set functions in gpu_affinity.py, because it calls py_nvml
 3) simple launch the main.py without using the launch.py and --platform option
 
+**Sample outputs are like**
+```
+DLL 2023-07-25 22:32:42.086766 - Epoch: 0 Iteration: 590  train.loss : 5.50856 None train.compute_ips : 8522.69 images/s train.total_ips : 8494.22 images/s train.lr : 0.1  train.grad_scale : 32.00000 None
+DLL 2023-07-25 22:32:44.521519 - Epoch: 0 Iteration: 600  train.loss : 5.50133 None train.compute_ips : 8520.28 images/s train.total_ips : 8476.75 images/s train.lr : 0.1  train.grad_scale : 35.20000 None
+DLL 2023-07-25 22:32:46.967904 - Epoch: 0 Iteration: 610  train.loss : 5.52383 None train.compute_ips : 8459.08 images/s train.total_ips : 8426.26 images/s train.lr : 0.1  train.grad_scale : 64.00000 None
+DLL 2023-07-25 22:32:49.456772 - Epoch: 0 Iteration: 620  train.loss : 5.48590 None train.compute_ips : 8363.89 images/s train.total_ips : 8299.98 images/s train.lr : 0.1  train.grad_scale : 64.00000 None
+```
 
 ## Table Of Contents
 
