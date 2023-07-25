@@ -4,6 +4,25 @@ In this repository you will find implementations of various image classification
 
 Detailed information on each model can be found here:
 
+## Simplified Version for ROCm compatiability 
+```
+# single card, fp32
+python3 main.py /home/aac/data/imagenet/ --data-backend pytorch --arch resnet50 --label-smoothing 0.1 
+
+# amp is auto enabled with pytorch (assumption), just add --amp option, throughput almost doubled
+python3 main.py /home/aac/data/imagenet/ --data-backend pytorch --amp --arch resnet50 --label-smoothing 0.1
+
+# multi card
+python3 ./multiproc.py --nproc_per_node 8 ./main.py /home/aac/data/imagenet/ --data-backend pytorch --arch resnet50 --label-smoothing 0.1 
+
+```
+
+Changes made to run on ROCm include 
+1) remove the DALI pipeline implementation in dataloader.py, because DALI installation requires CUDA
+2) remove the gpu affinity check/set functions in gpu_affinity.py, because it calls py_nvml
+3) simple launch the main.py without using the launch.py and --platform option
+
+
 ## Table Of Contents
 
 * [Models](#models)
