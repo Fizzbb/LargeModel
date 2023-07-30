@@ -62,3 +62,14 @@ cd ../ && mkdir val && mv ILSVRC2012_img_val.tar val/ && cd val && tar -xvf ILSV
 wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh | bash
 ```
 - or refer to pytorch imageNet [example](https://github.com/pytorch/examples/tree/main/imagenet)
+
+## 2. Criteo
+
+A total of 24 days, each day is about 15 GB
+
+https://we.tl/t-TbdTn2os31 
+
+https://labs.criteo.com/2013/12/download-terabyte-click-logs/
+
+1T https://ailab.criteo.com/download-criteo-1tb-click-logs-dataset/
+
