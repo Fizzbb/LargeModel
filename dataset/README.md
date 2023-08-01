@@ -67,9 +67,12 @@ wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/
 
 A total of 24 days, each day is about 15 GB
 
+### Official site
 https://we.tl/t-TbdTn2os31 
 
 https://labs.criteo.com/2013/12/download-terabyte-click-logs/
 
 1T https://ailab.criteo.com/download-criteo-1tb-click-logs-dataset/
 
+### TorchRec dataset
+https://pytorch.org/torchrec/torchrec.datasets.html
