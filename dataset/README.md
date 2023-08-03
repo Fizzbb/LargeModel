@@ -76,3 +76,9 @@ https://labs.criteo.com/2013/12/download-terabyte-click-logs/
 
 ### TorchRec dataset
 https://pytorch.org/torchrec/torchrec.datasets.html
+
+### 4.2GB 7days
+
+https://ailab.criteo.com/ressources/
+the fourth link is the kaggle challenge dataset
+```wget https://go.criteo.net/criteo-research-kaggle-display-advertising-challenge-dataset.tar.gz```
