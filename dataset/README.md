@@ -82,3 +82,8 @@ https://pytorch.org/torchrec/torchrec.datasets.html
 https://ailab.criteo.com/ressources/
 the fourth link is the kaggle challenge dataset
 ```wget https://go.criteo.net/criteo-research-kaggle-display-advertising-challenge-dataset.tar.gz```
+
+## 3. OpenWebText for GPT (39GB)
+
+https://github.com/microsoft/DeepSpeedExamples/tree/3d-parallelism/Megatron-LM/openwebtext
+
