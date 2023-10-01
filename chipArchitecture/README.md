@@ -4,7 +4,9 @@ https://khairy2011.medium.com/tpu-vs-gpu-vs-cerebras-vs-graphcore-a-fair-compari
 
 https://drive.google.com/file/d/1bElFjVNoQEoLIAzQFxW3-qsBWmI6KXbj/view?pli=1
 
-Systolic Array (TPU) vs SIMD + TC (Nvidia GPU) vs MIMD (Cerebras, GraphCore, Tenstorrent)
+- Systolic Array (TPU) 
+- SIMD + TC (Nvidia GPU) 
+- MIMD (Cerebras, GraphCore, Tenstorrent)
 
 ## 1. GPU, data parallelism
 
