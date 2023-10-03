@@ -1,0 +1,12 @@
+# Methodologies
+
+## [Roofline model](https://en.wikipedia.org/wiki/Roofline_model)
+
+The Roofline model is then obtained by plotting the performance(FLOPS) versus the arithmetic intensity(FLOPs/bytes).
+
+## Figure of Merits (FOM)
+Figure of Merit Regard less of the types of the benchmarks, a relative metric,i.e.,figure of merit(FOM),is often used in procurement. In this study,it is defined as follow
+https://www.sciencedirect.com/science/article/pii/S2772485921000053
+
+# MFU (Model Flop Utilization)
+https://arxiv.org/pdf/2205.05198.pdf
