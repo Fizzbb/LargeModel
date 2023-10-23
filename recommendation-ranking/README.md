@@ -11,3 +11,6 @@ https://medium.com/swlh/deep-learning-recommendation-models-dlrm-a-deep-dive-f38
 
 - Embedding scaling/caching
 https://www.hpc-ai.tech/blog/embedding-training-with-1-gpu-memory-and-10-times-less-budget-an-open-source-solution-for
+
+- Profiling with NV's pyProf
+https://www.adityaagrawal.net/blog/dnn/dlrm  https://github.com/adityaiitb/dlperf/tree/master/Recommendation/DLRM
