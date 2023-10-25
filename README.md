@@ -10,6 +10,7 @@
 - https://github.com/pytorch/kineto
 
 ## Profiling
+- nsys profile cli (2023.3) guide https://docs.nvidia.com/nsight-systems/UserGuide/index.html#cli-options
 - https://docs.nvidia.com/deeplearning/frameworks/dlprof-user-guide/index.html#profiling_pytorch_pyprof
 - https://github.com/adityaiitb/PyProf
 - https://jingchaozhang.github.io/DLProf-Demo/
