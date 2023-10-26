@@ -2,6 +2,7 @@
 
 ## Fine-tune with single node
 - https://blogs.oracle.com/research/post/oracle-first-to-finetune-gpt3-sized-ai-models-with-nvidia-a100-gpu
+- llama2 https://github.com/facebookresearch/llama-recipes
 
 ## Model reference
 - https://github.com/HabanaAI/Model-References
