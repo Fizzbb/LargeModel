@@ -16,5 +16,8 @@
 - https://github.com/adityaiitb/PyProf
 - https://jingchaozhang.github.io/DLProf-Demo/
 
-# Model Visulization 
+## Model Visulization 
 - Netron https://github.com/lutzroeder/netron
+
+## Training time estimation
+- https://epochai.org/blog/estimating-training-compute
