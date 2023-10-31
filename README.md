@@ -19,5 +19,6 @@
 ## Model Visulization 
 - Netron https://github.com/lutzroeder/netron
 
-## Training time estimation
+## Training time, Flops estimation
 - https://epochai.org/blog/estimating-training-compute
+- https://github.com/cli99/flops-profiler/tree/main
