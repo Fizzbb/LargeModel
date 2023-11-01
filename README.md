@@ -11,8 +11,10 @@
 - https://github.com/pytorch/kineto
 
 ## Profiling
+- Performance diagnosis toolkit https://arxiv.org/pdf/2205.02473.pdf
 - nsys profile cli (2023.3) guide https://docs.nvidia.com/nsight-systems/UserGuide/index.html#cli-options
 - https://docs.nvidia.com/deeplearning/frameworks/dlprof-user-guide/index.html#profiling_pytorch_pyprof
+- https://github.com/NVIDIA/PyProf
 - https://jingchaozhang.github.io/DLProf-Demo/
 - https://github.com/microsoft/DeepSpeed/tree/master/deepspeed/profiling/flops_profiler
  
