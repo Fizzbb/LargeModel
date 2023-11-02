@@ -16,6 +16,9 @@
 - https://docs.nvidia.com/deeplearning/frameworks/dlprof-user-guide/index.html#profiling_pytorch_pyprof
 - https://github.com/NVIDIA/PyProf
 - https://jingchaozhang.github.io/DLProf-Demo/
+
+Trace analysis: https://github.com/facebookresearch/HolisticTraceAnalysis/tree/main/examples
+
 - https://github.com/microsoft/DeepSpeed/tree/master/deepspeed/profiling/flops_profiler
  
 Rewrite
