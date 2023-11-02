@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --gpus all -it --privileged --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 --rm --name pytorch -dt -v /data02/zhaobo:/root  nvcr.io/nvidia/pytorch:23.07-py3

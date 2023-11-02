@@ -1,0 +1,1 @@
+dlprof --mode=pytorch  --reports=all --iter_start 50 --iter_stop 51 --output_path=./log python3 resnet50_2.py
