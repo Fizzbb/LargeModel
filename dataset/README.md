@@ -47,6 +47,18 @@ test_images.tar.gz     train_images_1.tar.gz  train_images_3.tar.gz  val_images.
 train_images_0.tar.gz  train_images_2.tar.gz  train_images_4.tar.gz
 ```
 
+Those .gz files are links to blob files, so don't try to move and unzip, just creat folder and unzip directly there
+```
+mkdir test train val
+tar -xzvf test_images.tar.gz -C test
+tar -xzvf train_images_0.tar.gz -C train
+tar -xzvf train_images_1.tar.gz -C train
+...
+```
+Lastly fix the val image name
+```
+cd val && wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh | bash
+```
 
 4. Or download from Kaggle, [object localization competition](kaggle competitions download -c imagenet-object-localization-challenge)
 
