@@ -7,7 +7,7 @@ This dataset spans 1000 object classes and contains 1,281,167 training images, 5
 
 Image resolution varies, e.g., fish folder, smallest 75 x 56, largest 4288 x 2848. On average is 469x387 pixel.
 
-### Download
+### Download -- number 3 is the easiest
 1. The offical download [sites](https://www.image-net.org/download.php) does not support downloading data anymore. Only the toolkits works.
 ```
 wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_devkit_t12.tar.gz
@@ -31,6 +31,11 @@ transmission-cli 5d6d0df7ed81efd49ca99ea4737e0ae5e3a5f2e5.torrent -w ~/Downloads
 
 3. Or use [ImageNet-1k](https://huggingface.co/datasets/imagenet-1k) from hugggingface, requires tokens through ```huggingface-cli login```
 ```
+# just download data
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="imagenet-1k", repo_type="dataset")
+
+# use in the script
 from datasets import load_dataset
 dset = load_dataset('imagenet-1k', split='train', streaming=True, use_auth_token=True)
 ```
@@ -62,7 +67,7 @@ cd ../ && mkdir val && mv ILSVRC2012_img_val.tar val/ && cd val && tar -xvf ILSV
 wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh | bash
 ```
 - or refer to pytorch imageNet [example](https://github.com/pytorch/examples/tree/main/imagenet)
-
+- preprocessing https://github.com/soumith/imagenet-multiGPU.torch
 ## 2. Criteo
 
 A total of 24 days, each day is about 15 GB
