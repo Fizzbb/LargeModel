@@ -13,7 +13,7 @@ Image resolution varies, e.g., fish folder, smallest 75 x 56, largest 4288 x 284
 wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_devkit_t12.tar.gz
 ```
 
-3. Use [Academic Torrent](https://academictorrents.com/browse.php?search=ImageNet), download the torrent file first, and then use [TransmissionBT](https://transmissionbt.com/download) to download the dataset with torrent file.
+2. Use [Academic Torrent](https://academictorrents.com/browse.php?search=ImageNet), download the torrent file first, and then use [TransmissionBT](https://transmissionbt.com/download) to download the dataset with torrent file.
 
 ```
 # download the torrent file
@@ -39,6 +39,14 @@ snapshot_download(repo_id="imagenet-1k", repo_type="dataset")
 from datasets import load_dataset
 dset = load_dataset('imagenet-1k', split='train', streaming=True, use_auth_token=True)
 ```
+Downloaded dataset or models are put in the default path ```/root/.cache/huggingface/hub```
+
+```
+ls /root/.cache/huggingface/hub/datasets--imagenet-1k/snapshots/0c4d3acf04a7458f5a11341dbe01d390859c40cc/data
+test_images.tar.gz     train_images_1.tar.gz  train_images_3.tar.gz  val_images.tar.gz
+train_images_0.tar.gz  train_images_2.tar.gz  train_images_4.tar.gz
+```
+
 
 4. Or download from Kaggle, [object localization competition](kaggle competitions download -c imagenet-object-localization-challenge)
 
