@@ -38,6 +38,8 @@ snapshot_download(repo_id="imagenet-1k", repo_type="dataset")
 # use in the script
 from datasets import load_dataset
 dset = load_dataset('imagenet-1k', split='train', streaming=True, use_auth_token=True)
+#### Huggingface recreate the 1281167 training images
+## Generating train split:  72%|█████████████████████████████████████▌              | 923947/1281167 [09:07<03:23, 1755.34 examples/s
 ```
 Downloaded dataset or models are put in the default path ```/root/.cache/huggingface/hub```
 
@@ -59,6 +61,7 @@ Lastly fix the val image name
 ```
 cd val && wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh | bash
 ```
+!Bummer, the image name and folder structures are different from ILSVR2012
 
 4. Or download from Kaggle, [object localization competition](kaggle competitions download -c imagenet-object-localization-challenge)
 
