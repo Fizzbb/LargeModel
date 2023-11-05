@@ -7,6 +7,21 @@ This dataset spans 1000 object classes and contains 1,281,167 training images, 5
 
 Image resolution varies, e.g., fish folder, smallest 75 x 56, largest 4288 x 2848. On average is 469x387 pixel.
 
+links works again .....
+https://techcommunity.microsoft.com/t5/azure-high-performance-computing/a-quick-guide-to-benchmarking-ai-models-on-azure-resnet-with/ba-p/3859291
+```
+# training
+wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_train.tar
+mkdir train && mv ILSVRC2012_img_train.tar train/ && cd train
+tar -xvf ILSVRC2012_img_train.tar && rm -f ILSVRC2012_img_train.tar
+find . -name "*.tar" | while read NAME ; do mkdir -p "${NAME%.tar}"; tar -xvf "${NAME}" -C "${NAME%.tar}"; rm -f "${NAME}"; done
+# validation
+wget https://image-net.org/data/ILSVRC/2012/ILSVRC2012_img_val.tar
+mkdir val && mv ILSVRC2012_img_val.tar val/ && cd val 
+tar -xvf ILSVRC2012_img_val.tar && rm -f ILSVRC2012_img_val.tar
+wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/valprep.sh | bash
+```
+
 ### Download -- number 3 is the easiest
 1. The offical download [sites](https://www.image-net.org/download.php) does not support downloading data anymore. Only the toolkits works.
 ```
