@@ -36,3 +36,9 @@ Rewrite
 ## GPU benchmarks
 - https://github.com/microsoft/superbenchmark
 - https://github.com/te42kyfo/gpu-benches
+```
+git clone https://github.com/te42kyfo/gpu-benches.git
+cd gpu-benches/gpu-stream/
+/usr/local/cuda/bin/nvcc -o stream main.cu
+./stream
+```
