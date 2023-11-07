@@ -32,3 +32,7 @@ Rewrite
 ## Training time, Flops estimation
 - https://epochai.org/blog/estimating-training-compute
 - https://github.com/cli99/flops-profiler/tree/main
+
+## GPU benchmarks
+- https://github.com/microsoft/superbenchmark
+- https://github.com/te42kyfo/gpu-benches
