@@ -13,7 +13,7 @@ To download a whole repository, just pass the repo_id and repo_type:
 
 ```
 from huggingface_hub import snapshot_download
-snapshot_download(repo_id="lysandre/arxiv-nlp")
+snapshot_download(repo_id="meta-llama/Llama-2-7b-hf")
 '/home/lysandre/.cache/huggingface/hub/models--lysandre--arxiv-nlp/snapshots/894a9adde21d9a3e3843e6d5aeaaf01875c7fade'
 
 # Or from a dataset
