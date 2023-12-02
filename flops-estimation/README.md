@@ -1,6 +1,8 @@
+# How to estimate the Model flops
 
 ##
 MFU: model flop utilization https://arxiv.org/pdf/2204.02311.pdf  page 66
+
 FMA: fused multiply-add  https://epochai.org/blog/estimating-training-compute
 
 ## A good example 
