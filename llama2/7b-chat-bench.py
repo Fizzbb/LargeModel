@@ -12,6 +12,10 @@ tokenizer = AutoTokenizer.from_pretrained(model)
 
 model = AutoModelForCausalLM.from_pretrained(model, device_map="auto", torch_dtype=torch.float16)
 
+# check model parameters: 6738415616
+model.num_parameters()
+
+
 prompt = "The basic idea of a Transformer model is"
 
 BS = BS_FOR_TEST = 1
