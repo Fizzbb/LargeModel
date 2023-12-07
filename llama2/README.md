@@ -48,3 +48,6 @@ generation_config.json  model-00002-of-00002.safetensors  special_tokens_map.jso
 
 ### generic download
 ``` git clone https://huggingface.co/meta-llama/Llama-2-7b```
+
+### GPU reset to clean up memory
+``` nvidia-smi -r```
