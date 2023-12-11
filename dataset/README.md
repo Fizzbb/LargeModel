@@ -1,6 +1,6 @@
 # Dataset download and preparation 
 
-## 1. ImageNet (ILSVRC2012)
+## 1. ImageNet (ILSVRC2012 150G)
 
 ### Info
 This dataset spans 1000 object classes and contains 1,281,167 training images, 50,000 validation images and 100,000 test images.
@@ -106,7 +106,7 @@ wget -qO- https://raw.githubusercontent.com/soumith/imagenetloader.torch/master/
 ```
 - or refer to pytorch imageNet [example](https://github.com/pytorch/examples/tree/main/imagenet)
 - preprocessing https://github.com/soumith/imagenet-multiGPU.torch
-## 2. Criteo
+## 2. Criteo (1T)
 
 A total of 24 days, each day is about 15 GB
 
@@ -129,4 +129,11 @@ the fourth link is the kaggle challenge dataset
 ## 3. OpenWebText for GPT (39GB)
 
 https://github.com/microsoft/DeepSpeedExamples/tree/3d-parallelism/Megatron-LM/openwebtext
+
+https://blog.salesforceairesearch.com/the-wikitext-long-term-dependency-language-modeling-dataset/
+
+## 4. the Pile for LLM (800G)
+https://pile.eleuther.ai/
+
+used by https://huggingface.co/nvidia/nemo-megatron-gpt-20B
 
