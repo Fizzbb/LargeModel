@@ -4,6 +4,11 @@
 - https://blogs.oracle.com/research/post/oracle-first-to-finetune-gpt3-sized-ai-models-with-nvidia-a100-gpu
 - llama2 https://github.com/facebookresearch/llama-recipes
 
+## Inference explaination
+- https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
+- https://jalammar.github.io/illustrated-gpt2/#part-1-got-and-language-modeling
+
+
 ## Model reference
 - https://github.com/HabanaAI/Model-References
 
