@@ -1,5 +1,8 @@
 # LargeModel
 
+## Transformer illustration
+- https://jalammar.github.io/illustrated-transformer/
+
 ## Fine-tune with single node
 - https://blogs.oracle.com/research/post/oracle-first-to-finetune-gpt3-sized-ai-models-with-nvidia-a100-gpu
 - llama2 https://github.com/facebookresearch/llama-recipes
