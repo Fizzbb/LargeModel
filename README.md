@@ -3,6 +3,9 @@
 ## Transformer illustration
 - https://jalammar.github.io/illustrated-transformer/
 
+## Training from scratch
+- https://www.youtube.com/watch?v=ZLbVdvOoTKM
+  
 ## Fine-tune with single node
 - https://blogs.oracle.com/research/post/oracle-first-to-finetune-gpt3-sized-ai-models-with-nvidia-a100-gpu
 - llama2 https://github.com/facebookresearch/llama-recipes
@@ -36,7 +39,8 @@ Rewrite
 
 ## Model Visulization 
 - Netron https://github.com/lutzroeder/netron
-
+- https://bbycroft.net/llm
+  
 ## Training time, Flops estimation
 - https://epochai.org/blog/estimating-training-compute
 - https://github.com/cli99/flops-profiler/tree/main
