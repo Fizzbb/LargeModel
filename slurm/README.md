@@ -48,3 +48,30 @@ srun torchrun \
 # Examples
 ## 1 Multi-node rccl/nccl
 https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/main/AACPlanoSlurmCluster/HowToGuides/How_To_Run_RCCL_Tests.md
+
+## 2. OpenClip with slurm
+https://github.com/mlfoundations/open_clip?tab=readme-ov-file#slurm
+
+## 3. slurm sbatch scripts with docker
+https://github.com/NVIDIA/pyxis
+https://github.com/NVIDIA/NeMo-Megatron-Launcher/blob/master/csp_tools/oci/build-nccl-tests.sh
+```
+#SBATCH --ntasks=1
+#SBATCH --ntasks-per-node=1
+
+HPCX_PATH="/opt/hpcx-v2.11-gcc-MLNX_OFED_LINUX-5-ubuntu20.04-cuda11-gdrcopy2-nccl2.11-x86_64"
+
+export OMPI_MCA_pml=ucx
+export OMPI_MCA_btl=^openib
+
+srun --container-mounts="$PWD:/nccl,$HPCX_PATH:/opt/hpcx" \
+     --container-image="nvcr.io/nvidia/pytorch:21.09-py3" \
+     --container-name="nccl" \
+     bash -c "
+     cd /nccl &&
+     git clone https://github.com/NVIDIA/nccl-tests.git &&
+     source /opt/hpcx/hpcx-init.sh &&
+     hpcx_load &&
+     cd nccl-tests &&
+     make MPI=1"
+```
