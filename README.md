@@ -14,6 +14,8 @@
 - https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
 - https://jalammar.github.io/illustrated-gpt2/#part-1-got-and-language-modeling
 
+## Performance projection
+- https://mp.weixin.qq.com/s/ftF3YRXPZ5mjVfqzGCDNYQ
 
 ## Model reference
 - https://github.com/HabanaAI/Model-References
