@@ -2,7 +2,7 @@
 
 ## Transformer
 - Illustration: https://jalammar.github.io/illustrated-transformer/
-- Flops calcuation: https://zhuanlan.zhihu.com/p/624740065
+- Flops calculation: https://zhuanlan.zhihu.com/p/624740065
 
 ## Training from scratch
 - https://www.youtube.com/watch?v=ZLbVdvOoTKM
