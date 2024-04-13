@@ -2,10 +2,14 @@
 
 ## Transformer
 - Illustration: https://jalammar.github.io/illustrated-transformer/
-- Flops calculation: https://zhuanlan.zhihu.com/p/624740065
+- Model Flops calculation: https://zhuanlan.zhihu.com/p/624740065
+- Model/token/communication estimation: https://www.53ai.com/news/qianyanjishu/303.html
 
 ## Training from scratch
 - https://www.youtube.com/watch?v=ZLbVdvOoTKM
+
+## Training framework performance 
+- Megatron analysis: https://www.high-flyer.cn/blog/model_parallel-1/inidex/
   
 ## Fine-tune with single node
 - https://blogs.oracle.com/research/post/oracle-first-to-finetune-gpt3-sized-ai-models-with-nvidia-a100-gpu
