@@ -4,7 +4,8 @@
 - Illustration: https://jalammar.github.io/illustrated-transformer/
 - Model Flops calculation: https://zhuanlan.zhihu.com/p/624740065
 - Model/token/communication estimation: https://www.53ai.com/news/qianyanjishu/303.html
-
+- collective communication: https://zhuanlan.zhihu.com/p/435438871
+  
 ## Training from scratch
 - https://www.youtube.com/watch?v=ZLbVdvOoTKM
 
