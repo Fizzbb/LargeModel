@@ -1,7 +1,8 @@
 # LargeModel
 
-## Transformer illustration
-- https://jalammar.github.io/illustrated-transformer/
+## Transformer
+- Illustration: https://jalammar.github.io/illustrated-transformer/
+- Flops calcuation: https://zhuanlan.zhihu.com/p/624740065
 
 ## Training from scratch
 - https://www.youtube.com/watch?v=ZLbVdvOoTKM
