@@ -62,3 +62,6 @@ cd gpu-benches/gpu-stream/
 /usr/local/cuda/bin/nvcc -o stream main.cu
 ./stream
 ```
+
+## GPU foundamentals 
+- How GEMM works https://siboehm.com/articles/22/CUDA-MMM
