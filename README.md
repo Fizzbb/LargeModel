@@ -65,3 +65,6 @@ cd gpu-benches/gpu-stream/
 
 ## GPU foundamentals 
 - How GEMM works https://siboehm.com/articles/22/CUDA-MMM
+
+## Compilation
+TVM to custom ML hardware https://www.youtube.com/watch?v=FBdW1gJGx0M
