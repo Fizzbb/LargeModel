@@ -5,7 +5,8 @@
 - Model Flops calculation: https://zhuanlan.zhihu.com/p/624740065
 - Model/token/communication estimation: https://www.53ai.com/news/qianyanjishu/303.html
 - collective communication: https://zhuanlan.zhihu.com/p/435438871
-  
+- GPU capability/bottleneck: https://mp.weixin.qq.com/s/S7lxmi_Q_Uq23mtMus4KSQ 
+
 ## Training from scratch
 - https://www.youtube.com/watch?v=ZLbVdvOoTKM
 
@@ -67,4 +68,4 @@ cd gpu-benches/gpu-stream/
 - How GEMM works https://siboehm.com/articles/22/CUDA-MMM
 
 ## Compilation
-TVM to custom ML hardware https://www.youtube.com/watch?v=FBdW1gJGx0M
+- TVM to custom ML hardware https://www.youtube.com/watch?v=FBdW1gJGx0M
