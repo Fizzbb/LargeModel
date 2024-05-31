@@ -69,3 +69,6 @@ cd gpu-benches/gpu-stream/
 
 ## Compilation
 - TVM to custom ML hardware https://www.youtube.com/watch?v=FBdW1gJGx0M
+
+## Chip architecture
+- [Groq TSP](https://github.com/BRTResearch/AIChip_Paper_List/blob/master/notes/ISCA/Think%20Fast%20A%20Tensor%20Streaming%20Processor%20(TSP)%20for%20Accelerating%20Deep%20Learning%20Workloads.md)  [video intro](https://www.youtube.com/watch?v=kPUxl00xys4)
