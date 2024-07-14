@@ -1,5 +1,9 @@
 # LargeModel
 
+## Infra
+[imbue from baremetal to 70b model](https://imbue.com/research/70b-infrastructure/)
+
+
 ## Transformer
 - Illustration: https://jalammar.github.io/illustrated-transformer/
 - Model Flops calculation: https://zhuanlan.zhihu.com/p/624740065
