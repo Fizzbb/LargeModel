@@ -5,6 +5,8 @@
 
 
 ## Transformer
+- Parameter Math [llama2-13 example](https://medium.com/@saratbhargava/mastering-llama-math-part-1-a-step-by-step-guide-to-counting-parameters-in-llama-2-b3d73bc3ae31)
+- [Annotated Transformer](https://nlp.seas.harvard.edu/annotated-transformer/)
 - Illustration: https://jalammar.github.io/illustrated-transformer/
 - Model Flops calculation: https://zhuanlan.zhihu.com/p/624740065
 - Model/token/communication estimation: https://www.53ai.com/news/qianyanjishu/303.html
